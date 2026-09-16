@@ -1,0 +1,28 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        // Solicita ao usuário que insira sua idade.
+        Console.WriteLine("Digite sua idade: ");
+        int idade = int.Parse(Console.ReadLine()); // Lê a entrada do usuário, converte para inteiro e armazena na variável 'idade'.
+
+        // Pergunta ao usuário se ele possui carteira de motorista.
+        Console.WriteLine("Você possui carteira de motorista?");
+        string carteira = Console.ReadLine().ToLower(); // Lê a entrada do usuário, converte para letras minúsculas e armazena na variável 'carteira'.
+
+        // Verifica se o usuário tem 18 anos ou mais e se possui carteira de motorista.
+        if (idade >= 18 && carteira == "sim") // A comparação é feita com "sim" em letras minúsculas devido ao uso de ToLower().
+        {
+            // Se ambas as condições forem verdadeiras, exibe que o usuário pode dirigir.
+            Console.WriteLine("Você pode dirigir!");
+        }
+        else
+        {
+            // Caso contrário, exibe que o usuário não pode dirigir.
+            Console.WriteLine("Você não pode dirigir!");
+        }
+   
+    }
+}
+
