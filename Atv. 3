@@ -1,0 +1,27 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        // Solicita ao usuário que insira sua idade.
+        Console.WriteLine("Qual sua idade: ");
+        int idade = int.Parse(Console.ReadLine()); // Lê a entrada do usuário, converte para inteiro e armazena na variável 'idade'.
+
+        // Pergunta ao usuário se ele possui diploma.
+        Console.WriteLine("Você possui diploma?");
+        string diploma = Console.ReadLine().ToLower(); // Lê a entrada do usuário, converte para letras minúsculas e armazena na variável 'diploma'.
+
+        // Verifica se o usuário tem 21 anos ou mais e se possui diploma.
+        if (idade >= 21 && diploma == "sim") // A comparação é feita com "sim" em letras minúsculas devido ao uso de ToLower().
+        {
+            // Se ambas as condições forem verdadeiras, exibe que o usuário está qualificado para a vaga.
+            Console.WriteLine("Você está qualificado para a vaga!");
+        }
+        else
+        {
+            // Caso contrário, exibe que o usuário não está qualificado para a vaga.
+            Console.WriteLine("Você não está qualificado para a vaga!");
+        }
+    }
+}
+
