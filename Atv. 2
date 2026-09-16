@@ -1,0 +1,27 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        // Pergunta ao usuário se ele deseja comprar um carro.
+        Console.WriteLine("Você deseja comprar um carro? ");
+        string carro = Console.ReadLine(); // Lê a entrada do usuário e armazena na variável 'carro'.
+
+        // Pergunta ao usuário se ele possui condições financeiras para a aquisição.
+        Console.WriteLine("Você possui condição para essa aquisição?");
+        string dinheiro = Console.ReadLine().ToLower(); // Lê a entrada do usuário, converte para letras minúsculas e armazena na variável 'dinheiro'.
+
+        // Verifica se o usuário deseja comprar um carro e se possui condições financeiras.
+        if (carro == "sim" && dinheiro == "sim") // A comparação é feita com "sim" em letras minúsculas devido ao uso de ToLower().
+        {
+            // Se ambas as condições forem verdadeiras, exibe que o usuário pode comprar um carro novo.
+            Console.WriteLine("Parabéns, você pode comprar um carro novo!");
+        }
+        else
+        {
+            // Caso contrário, exibe que o usuário não pode comprar um carro novo.
+            Console.WriteLine("Você não pode comprar um carro novo!");
+        }
+    }
+}
+
