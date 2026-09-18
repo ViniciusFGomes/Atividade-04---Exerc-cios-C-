@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Programa que pergunta ao usuário se deseja comprar
+        Console.Write("Deseja comprar um produto?");
+
+        // lê a resposta do usuário como texto
+        string resposta = Console.ReadLine();
+
+        // considera "s" ou "sim" como confirmação
+        if (resposta == "s" || resposta == "sim")
+        {
+            Console.WriteLine("Obrigado pela compra!");
+        }
+        else
+        {
+            Console.WriteLine("Entendido. Se precisar de ajuda, estou aqui.");
+        }
+
+    }
+}
+
+
