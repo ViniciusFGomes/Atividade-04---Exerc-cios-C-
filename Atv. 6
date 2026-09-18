@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Solicita os dados ao usuário
+        Console.Write("Voce deseja adicionar açucar ou leite no seu café?");
+        string adicional = Console.ReadLine();
+
+        // Verifica as duas condições simultaneamente
+        if (adicional == "açucar" || adicional == "leite")
+        {
+            Console.WriteLine("Café com adicional preparado!");
+        }
+        else if (adicional == "nao")
+        {
+            Console.WriteLine("Café sem adicional preparado!");
+
+        }
+        else
+        {
+            Console.WriteLine("Opção inválida. Por favor, digite 'açucar', 'leite' ou 'nao'.");
+        }
+
+    }
+}
+
+
