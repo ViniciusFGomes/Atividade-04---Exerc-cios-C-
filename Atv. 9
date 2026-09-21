@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite o seu nome: ");
+        string nome = Console.ReadLine();
+
+        // Verificação comparando o nome com Wilson ou Gloria (ignorando maiúsculas/minúsculas)
+        if (nome.Equals("Wilson", StringComparison.OrdinalIgnoreCase) || 
+            nome.Equals("Gloria", StringComparison.OrdinalIgnoreCase))
+        {
+            Console.WriteLine("Olá, bem-vindo(a) de volta!");
+        }
+    }
+}
