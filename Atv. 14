@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite uma palavra: ");
+        string palavra = Console.ReadLine();
+
+        // Verifica se a palavra NÃO é nula nem composta apenas por espaços em branco
+        if (!string.IsNullOrWhiteSpace(palavra))
+        {
+            Console.WriteLine("A palavra não é vazia");
+        }
+    }
+}
