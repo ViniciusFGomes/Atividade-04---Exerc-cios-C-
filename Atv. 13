@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Você NÃO é um membro inativo do clube? (sim/nao): ");
+        string resposta = Console.ReadLine();
+
+        // Considera resposta positiva se o usuário respondeu "sim" (confirmando que NÃO é inativo)
+        bool naoEhInativo = resposta.Equals("sim", StringComparison.OrdinalIgnoreCase);
+
+        // Se a resposta for negativa (se 'naoEhInativo' for falso), entra no if
+        if (!naoEhInativo)
+        {
+            Console.WriteLine("Por favor, atualize sua inscrição para continuar usufruindo dos benefícios do clube");
+        }
+    }
+}
